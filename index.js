@@ -34,16 +34,16 @@ imgs.forEach((e) => {
     });
     e.classList.add("active");
     if (e.classList.contains("img1")) {
-      main_img.src = "/images/image-product-1.jpg";
+      main_img.src = "./images/image-product-1.jpg";
     }
     if (e.classList.contains("img2")) {
-      main_img.src = "/images/image-product-2.jpg";
+      main_img.src = "./images/image-product-2.jpg";
     }
     if (e.classList.contains("img3")) {
-      main_img.src = "/images/image-product-3.jpg";
+      main_img.src = "./images/image-product-3.jpg";
     }
     if (e.classList.contains("img4")) {
-      main_img.src = "/images/image-product-4.jpg";
+      main_img.src = "./images/image-product-4.jpg";
     }
   });
 });
@@ -76,7 +76,7 @@ let i = 0;
 next.addEventListener("click", () => {
   if (i < 3) {
     i += 1;
-    img_preview.src = ` /images/image-product-${i + 1}.jpg`;
+    img_preview.src = `./images/image-product-${i + 1}.jpg`;
     thumbnail_imgs.forEach((ele) => {
       ele.classList.remove("active");
     });
@@ -86,7 +86,7 @@ next.addEventListener("click", () => {
 previous.addEventListener("click", () => {
   if (i > 0) {
     i -= 1;
-    img_preview.src = ` /images/image-product-${i + 1}.jpg`;
+    img_preview.src = `./images/image-product-${i + 1}.jpg`;
     thumbnail_imgs.forEach((ele) => {
       ele.classList.remove("active");
     });
@@ -100,16 +100,16 @@ thumbnail_imgs.forEach((e) => {
     });
     e.classList.add("active");
     if (e.classList.contains("one")) {
-      img_preview.src = "/images/image-product-1.jpg";
+      img_preview.src = "./images/image-product-1.jpg";
     }
     if (e.classList.contains("two")) {
-      img_preview.src = "/images/image-product-2.jpg";
+      img_preview.src = "./images/image-product-2.jpg";
     }
     if (e.classList.contains("three")) {
-      img_preview.src = "/images/image-product-3.jpg";
+      img_preview.src = "./images/image-product-3.jpg";
     }
     if (e.classList.contains("four")) {
-      img_preview.src = "/images/image-product-4.jpg";
+      img_preview.src = "./images/image-product-4.jpg";
     }
   });
 });
@@ -117,13 +117,13 @@ let j = 0;
 next_main_img.addEventListener("click", () => {
   if (j < 3) {
     j += 1;
-    main_img.src = `/images/image-product-${j + 1}.jpg`;
+    main_img.src = `./images/image-product-${j + 1}.jpg`;
   }
 });
 previous_main_img.addEventListener("click", () => {
   if (j > 0) {
     j -= 1;
-    main_img.src = `/images/image-product-${j + 1}.jpg`;
+    main_img.src = `./images/image-product-${j + 1}.jpg`;
   }
 });
 togglesidebar.addEventListener("click", () => {
